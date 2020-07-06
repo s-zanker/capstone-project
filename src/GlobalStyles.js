@@ -2,18 +2,29 @@ import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
     
- * {
+* {
         box-sizing: border-box;
-    }
+}
+
+:root {
+  --sand: #F7EEDF;
+  --darkgreen: #245f49;
+  --freshgreen: #9bb449;
+  --softgreen: #cfd7b9;
+  --lightgreen: #f1f5ef;
+  --brown: #938773;
+  --darkgrey: #44494a;
+  --lightgrey: #c9cfce;
+  --softgrey: #a7b2af;
+  --sun-yellow: #ffd422;
+}
+
+
 
 body {
   margin: 0;
-  background-color: #fcfcfc;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  max-width: 375px;
+  background-color: var(--lightgreen);
+  font-family: 'Overpass', sans-serif;
 }
-
 `

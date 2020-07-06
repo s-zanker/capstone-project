@@ -1,8 +1,13 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import Header from './components/Header'
 
 function App() {
-  return <div>digitalnatur</div>;
+  return (
+    <>
+      <Header />
+      <h2>Das ist h2</h2>
+    </>
+  )
 }
 
-export default App;
+export default App
