@@ -19,12 +19,15 @@ export default createGlobalStyle`
   --sun-yellow: #ffd422;
 }
 
-
-
 body {
   margin: 0;
   max-width: 375px;
   background-color: var(--lightgreen);
   font-family: 'Overpass', sans-serif;
 }
+
+img {
+  max-width: 375px;
+}
+
 `
