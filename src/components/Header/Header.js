@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default function Header() {
   return (
     <StyledHeader>
-      <StyledTitle>digitalnatur</StyledTitle>
+      <h1>digitalnatur</h1>
     </StyledHeader>
   )
 }
@@ -20,8 +20,4 @@ const StyledHeader = styled.header`
   align-items: center;
   position: sticky;
   top: 0;
-`
-
-const StyledTitle = styled.h1`
-  color: var(--freshgreen);
 `
