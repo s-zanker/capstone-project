@@ -1,142 +1,170 @@
 [
   {
     "_id": "5f046d06b8ff322a5ebd5c6a",
-    "name": "BRISTO",
-    "location": "Turah",
-    "url": "https://www.workspace.de",
+    "name": "Alsenhof",
+    "location": "Lägerdorf",
+    "url": "www.alsenhof.de",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d062cb58a2d673a734a",
-    "name": "TRANSLINK",
-    "location": "Basye",
-    "url": "https://www.workspace.de",
-    "picture": "/images/al-ghazali-3KmWk2WC_Z0-unsplash.jpg"
+    "name": "Ammersee Denkerhaus",
+    "location": "Diessen am Ammersee",
+    "url": "www.ammersee-denkerhaus.de ",
+    "picture": "/images/alana-harris-seXVRaaZQuo-unsplash.jpg"
   },
   {
     "_id": "5f046d063ab5f25422a23149",
-    "name": "FISHLAND",
-    "location": "Saddlebrooke",
-    "url": "https://www.workspace.de",
+    "name": "PopUp Coworking Mechow",
+    "location": "Mechow",
+    "url": "www.gut-mechow.de ",
     "picture": "/images/andrea-davis-04G19lnpHcc-unsplash.jpg"
   },
   {
-    "_id": "5f046d0604612b387359cd1d",
-    "name": "HOUSEDOWN",
-    "location": "Edenburg",
-    "url": "https://www.workspace.de",
-    "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
-  },
-  {
     "_id": "5f046d06ad54524875c95692",
-    "name": "SYBIXTEX",
-    "location": "Allentown",
-    "url": "https://www.workspace.de",
-    "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
+    "name": "Wir bauen Zukunft ",
+    "location": "Nieklitz",
+    "url": "www.wirbauenzukunft.de",
+    "picture": "/images/al-ghazali-3KmWk2WC_Z0-unsplash.jpg"
   },
   {
     "_id": "5f046d068ad59facb6914461",
-    "name": "IDEALIS",
-    "location": "Winesburg",
-    "url": "https://www.workspace.de",
-    "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
-  },
-  {
-    "_id": "5f046d06ccd2192ef19dcb9f",
-    "name": "RAMJOB",
-    "location": "Motley",
-    "url": "https://www.workspace.de",
+    "name": " Tokunft Hus ",
+    "location": "Bücken",
+    "url": "www.tokunfthus.de ",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d067ec28c057e0f0d57",
-    "name": "ISOLOGICA",
-    "location": "Glendale",
-    "url": "https://www.workspace.de",
+    "name": "CoWork Oldesloe",
+    "location": "Bad Oldesloe",
+    "url": "www.annette-schumacher.de",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d068e7e6818004fa303",
-    "name": "SCENTRIC",
-    "location": "Thermal",
-    "url": "https://www.workspace.de",
+    "name": "CoWorking Wittenberge",
+    "location": "Wittenberge",
+    "url": "www.coworking-wittenberge.de ",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d061b8a38e9fe653d7b",
-    "name": "ZEROLOGY",
-    "location": "Why",
-    "url": "https://www.workspace.de",
+    "name": "Coworking-Space Hitzacker ",
+    "location": "Hitzacker",
+    "url": "",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d06f0e3c81a5b575ac3",
-    "name": "POLARAX",
-    "location": "Holcombe",
-    "url": "https://www.workspace.de",
+    "name": "Cocina - Food Coworking Kitchen ",
+    "location": "Kiel",
+    "url": "",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d06c60dd66489dfcf87",
-    "name": "AQUASURE",
-    "location": "Bergoo",
+    "name": "Alter Heuboden",
+    "location": "Felde",
     "url": "https://www.workspace.de",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d062732b572cc23d9cf",
-    "name": "CAPSCREEN",
-    "location": "Singer",
-    "url": "https://www.workspace.de",
+    "name": "Kiez Buero Coworking",
+    "location": "Hamburg-Langenhorn",
+    "url": "https://www.kiez-buero.de",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d064d9b61e947cc665a",
-    "name": "GEEKOSIS",
-    "location": "Lisco",
-    "url": "https://www.workspace.de",
+    "name": "GetWork",
+    "location": "Gettorf",
+    "url": "https://www.gettorf.de",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d06f104019e6f5ca12f",
-    "name": "INTERGEEK",
-    "location": "Bend",
-    "url": "https://www.workspace.de",
+    "name": "Westerwerk",
+    "location": "Itzehoe",
+    "url": "https://www.westerwerk.com",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d061670ba0f1b924d2e",
-    "name": "COMBOT",
-    "location": "Brambleton",
-    "url": "https://www.workspace.de",
+    "name": "weXelwirken",
+    "location": "Reutlingen",
+    "url": "www.wexelwirken.net",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d060c819c0dde6adef8",
-    "name": "OTHERSIDE",
-    "location": "Carrsville",
-    "url": "https://www.workspace.de",
+    "name": "DSTATION",
+    "location": "Schöppenstedt",
+    "url": "https://dstation.org/",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d06862abf687b80cee0",
-    "name": "CHILLIUM",
-    "location": "Islandia",
+    "name": "Mini-Workspace Aukrug ",
+    "location": "Aukrug",
     "url": "https://www.workspace.de",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d067322fd80b65db810",
-    "name": "SPRINGBEE",
-    "location": "Harrison",
-    "url": "https://www.workspace.de",
+    "name": "cobaas",
+    "location": "Preetz",
+    "url": "www.cobaas.de",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f046d06e1e53a4cdcc086b0",
-    "name": "SATIANCE",
-    "location": "Shindler",
-    "url": "https://www.workspace.de",
+    "name": "MS39 Coworkingspace",
+    "location": "Soltau",
+    "url": "www.ms39-soltau.org",
+    "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
+  },
+  {
+    "_id": "5f046d06e1e53a4cdcc086b0",
+    "name": "DAS HERRENHAUS",
+    "location": "Niendorf/Stecknitz",
+    "url": "https://herrenhausvonhollander.de/",
+    "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
+  },
+  {
+    "_id": "5f046d06e1e53a4cdcc086b0",
+    "name": "Coworking-Space Viehbrook",
+    "location": "Rendswühren",
+    "url": "https://www.hof-viehbrook.de/",
+    "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
+  },
+  {
+    "_id": "5f046d06e1e53a4cdcc086b0",
+    "name": "vekselwerk",
+    "location": "Kiel",
+    "url": "https://anscharcampus.de/",
+    "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
+  },
+  {
+    "_id": "5f046d06e1e53a4cdcc086b0",
+    "name": "Kiez Buero Coworking",
+    "location": "Neustrelitz",
+    "url": "https://kiez-buero.de/neustrelitz/",
+    "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
+  },
+  {
+    "_id": "5f046d06e1e53a4cdcc086b0",
+    "name": "TorfHub",
+    "location": "Kastorf",
+    "url": "https://www.torfhub.de/",
+    "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
+  },
+  {
+    "_id": "5f046d06e1e53a4cdcc086b0",
+    "name": "INNOMANIA",
+    "location": "Lüneburg",
+    "url": "https://innomania-cowork.de/",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   }
 ]
