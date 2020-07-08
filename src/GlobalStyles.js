@@ -27,7 +27,64 @@ body {
 }
 
 img {
-  max-width: 375px;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+h1 {
+  font-family: Chivo;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: var(--freshgreen);}
+
+h2 {
+  font-family: Chivo;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--darkgreen);
+}
+
+h4 {
+  font-family: Chivo;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: var(--darkgreen);}
+
+link {
+  font-family: Overpass;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--sun-yellow);
+}
+
+p {
+  font-family: Overpass;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: 0.3px;
+  color: #2c3f58;
 }
 
 `

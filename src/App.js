@@ -17,8 +17,5 @@ function App() {
 export default App
 
 const StyledTitle = styled.h2`
-  color: var(--darkgreen);
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
 `

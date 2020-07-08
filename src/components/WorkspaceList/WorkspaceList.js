@@ -5,7 +5,7 @@ export default function WorkspaceList({ workspaces }) {
   return (
     <>
       {workspaces.map((workspace) => (
-        <Workspace workspace={workspace} />
+        <Workspace workspace={workspace} key={workspace._id} />
       ))}
     </>
   )
