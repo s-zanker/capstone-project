@@ -10,7 +10,7 @@ export default function Header() {
 }
 
 const StyledHeader = styled.header`
-  background-color: whitesmoke;
+  background-color: var(--freshgreen);
   border-bottom: 1px solid var(--freshgreen);
   display: flex;
   flex-direction: row;

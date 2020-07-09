@@ -20,8 +20,7 @@ export default createGlobalStyle`
 }
 
 body {
-  margin: 0;
-  max-width: 600px;
+  margin: 0 auto;
   background-color: var(--lightgreen);
   font-family: 'Overpass', sans-serif;
 }
@@ -32,60 +31,58 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: Chivo, serif;
+  font-family: 'Chivo', serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
 }
 
 h1 {
- 
   font-size: 40px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  color: var(--freshgreen);}
+  color: whitesmoke;}
 
 h2 {
-  font-family: Chivo;
-  font-size: 32px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+  font-size: 25px;
+  font-weight: bold;
   line-height: 1.5;
-  letter-spacing: normal;
   color: var(--darkgreen);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 1.5;
+  color: var(--darkgrey);
 }
 
 h4 {
-  font-family: Chivo;
   font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.6;
-  letter-spacing: normal;
-  color: var(--darkgreen);}
+  color: var(--darkgreen);
+}
 
 link {
-  font-family: Overpass;
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   color: var(--sun-yellow);
 }
 
 p {
-  font-family: Overpass;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.57;
   letter-spacing: 0.3px;
-  color: #2c3f58;
+  color:var(--darkgrey);
+}
+
+.p-green {
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.3px;
+  color: var(--darkgreen);
 }
 
 `
