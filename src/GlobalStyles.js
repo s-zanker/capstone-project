@@ -21,7 +21,7 @@ export default createGlobalStyle`
 
 body {
   margin: 0;
-  max-width: 375px;
+  max-width: 600px;
   background-color: var(--lightgreen);
   font-family: 'Overpass', sans-serif;
 }
@@ -30,12 +30,13 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  font-family: Chivo, serif;
 }
 
 h1 {
-  font-family: Chivo;
+ 
   font-size: 40px;
   font-weight: bold;
   font-stretch: normal;

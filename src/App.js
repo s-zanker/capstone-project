@@ -6,16 +6,24 @@ import workspaces from './assets/workspaces.json'
 
 function App() {
   return (
-    <>
+    <AppGrid>
       <Header />
-      <StyledTitle>Shared Workspaces</StyledTitle>
-      <WorkspaceList workspaces={workspaces} />
-    </>
+      <Main>
+        <WorkspaceList workspaces={workspaces} />
+      </Main>
+    </AppGrid>
   )
 }
 
 export default App
 
-const StyledTitle = styled.h2`
-  text-align: center;
+const AppGrid = styled.div`
+  display: grid;
+  grid-template-rows: 60px auto;
+  height: 100vh;
+`
+
+const Main = styled.main`
+  padding: 20px;
+  overflow-y: scroll;
 `

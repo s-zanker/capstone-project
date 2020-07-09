@@ -12,6 +12,4 @@ export default function Workspace({ workspace }) {
   )
 }
 
-const StyledWorkspaceItem = styled.div`
-  margin: 20px;
-`
+const StyledWorkspaceItem = styled.div``

@@ -27,7 +27,7 @@ export const withMockData = () => (
   />
 )
 
-export const withoutAnImage = () => (
+export const withoutAnUrl = () => (
   <Workspace
     workspace={{
       _id: '5f046d06b8ff322a5ebd5c6a',
@@ -39,7 +39,7 @@ export const withoutAnImage = () => (
   />
 )
 
-export const withoutAnUrl = () => (
+export const withoutAnImage = () => (
   <Workspace
     workspace={{
       _id: '5f046d06b8ff322a5ebd5c6a',
