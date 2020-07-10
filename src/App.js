@@ -9,7 +9,7 @@ import WorkspaceList from './components/WorkspaceList/WorkspaceList'
 function App() {
   return (
     <AppGrid>
-      <Header />
+      <Header title="digitalnatur" />
       <Main>
         <Switch>
           <Route exact path="/">
