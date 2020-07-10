@@ -1,22 +1,51 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import styled from 'styled-components'
 
 export default function WorkspaceDetail({ workspaces }) {
   let { id } = useParams()
 
-  const { name, location, url, picture } = workspaces.find(
-    (workspace) => workspace._id === id
-  )
+  const {
+    name,
+    description,
+    location,
+    street,
+    postcode,
+    url,
+    email,
+    phone,
+    picture,
+  } = workspaces.find((workspace) => workspace._id === id)
 
   console.log(name)
   return (
     <section>
-      <img src={process.env.PUBLIC_URL + picture} alt="" />
-      <h1>{name}</h1>
-      <ul>
-        <li>{location}</li>
-        <li>{url}</li>
-      </ul>
+      <Link to="/">zurück</Link>
+      <ImageStyled src={process.env.PUBLIC_URL + picture} alt="" />
+      <h3>{name}</h3>
+      <div className="p-green">{description}</div>
+      <br />
+      <h4>Kontakt</h4>
+      <div className="p-green">{street}</div>
+      <div className="p-green">
+        {`${postcode}
+        ${location}`}
+      </div>
+      <br />
+      <div className="p-green">{phone}</div>
+      <div className="p-green">
+        <a href={`mailto:${email}`}>{email}</a>
+      </div>
+      <div className="p-green">
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          {url}
+        </a>
+      </div>
     </section>
   )
 }
+
+const ImageStyled = styled.img`
+  margin-top: 10px;
+  margin-bottom: 10px;
+`

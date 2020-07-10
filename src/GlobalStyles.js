@@ -56,7 +56,7 @@ h2 {
 h3 {
   font-size: 25px;
   line-height: 1.5;
-  color: var(--darkgrey);
+  color: var(--darkgreen);
 }
 
 h4 {
