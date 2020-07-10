@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: 'Chivo', serif;
   font-weight: normal;
-  font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
 }
@@ -41,7 +40,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 40px;
   font-weight: bold;
-  color: whitesmoke;}
+  color: whitesmoke;
+}
 
 h2 {
   font-size: 25px;
@@ -65,10 +65,10 @@ h4 {
   color: var(--darkgreen);
 }
 
-link {
+a {
   font-size: 16px;
   line-height: 1.5;
-  color: var(--sun-yellow);
+  color: var(--darkgreen);
 }
 
 p {
