@@ -66,7 +66,7 @@ h4 {
 }
 
 a {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--darkgreen);
 }

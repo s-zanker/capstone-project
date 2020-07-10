@@ -10,42 +10,42 @@
     "_id": "5f0734c24fa55124071002af",
     "name": "Ammersee Denkerhaus",
     "location": "Diessen am Ammersee",
-    "url": "www.ammersee-denkerhaus.de ",
+    "url": "https://www.ammersee-denkerhaus.de ",
     "picture": "/images/alana-harris-seXVRaaZQuo-unsplash.jpg"
   },
   {
     "_id": "5f0734c2d32970aa8f73fced",
     "name": "PopUp Coworking Mechow",
     "location": "Mechow",
-    "url": "www.gut-mechow.de ",
+    "url": "http://www.gut-mechow.de",
     "picture": "/images/andrea-davis-04G19lnpHcc-unsplash.jpg"
   },
   {
     "_id": "5f0734c2f4361771f9282411",
     "name": "Wir bauen Zukunft ",
     "location": "Nieklitz",
-    "url": "www.wirbauenzukunft.de",
+    "url": "https://www.wirbauenzukunft.de",
     "picture": "/images/al-ghazali-3KmWk2WC_Z0-unsplash.jpg"
   },
   {
     "_id": "5f0734c2847a4fdec1e8143f",
     "name": " Tokunft Hus ",
     "location": "Bücken",
-    "url": "www.tokunfthus.de ",
+    "url": "https://www.tokunfthus.de ",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f0734c23932001859723555",
     "name": "CoWork Oldesloe",
     "location": "Bad Oldesloe",
-    "url": "www.annette-schumacher.de",
+    "url": "https://www.annette-schumacher.de",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f0734c262a11b03b75d6602",
     "name": "CoWorking Wittenberge",
     "location": "Wittenberge",
-    "url": "www.coworking-wittenberge.de ",
+    "url": "https://www.wittenberge-pioneers.de",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
@@ -66,7 +66,7 @@
     "_id": "5f0734c2c0c96baa4e863355",
     "name": "Alter Heuboden",
     "location": "Felde",
-    "url": "https://www.workspace.de",
+    "url": "http://www.alter-heuboden.de/",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
@@ -94,7 +94,7 @@
     "_id": "5f0734c2190efd6c83299b2c",
     "name": "weXelwirken",
     "location": "Reutlingen",
-    "url": "www.wexelwirken.net",
+    "url": "https://www.wexelwirken.net",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
@@ -108,21 +108,21 @@
     "_id": "5f0734c20a8891a1d11bb95b",
     "name": "Mini-Workspace Aukrug ",
     "location": "Aukrug",
-    "url": "https://www.workspace.de",
+    "url": "https://mini-workspace-aukrug.business.site/",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f0734c208cdc6c526076c6e",
     "name": "cobaas",
     "location": "Preetz",
-    "url": "www.cobaas.de",
+    "url": "https://www.cobaas.de",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {
     "_id": "5f0734c2bdb91b9549d16b10",
     "name": "MS39 Coworkingspace",
     "location": "Soltau",
-    "url": "www.ms39-soltau.org",
+    "url": "https://ms39-soltau.org/",
     "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
   },
   {

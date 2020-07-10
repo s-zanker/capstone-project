@@ -36,4 +36,9 @@ const AppGrid = styled.div`
 const Main = styled.main`
   padding: 20px;
   overflow-y: scroll;
+  &::after {
+    content: '';
+    display: block;
+    height: 40px;
+  }
 `
