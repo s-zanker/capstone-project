@@ -5,6 +5,8 @@ import styled from 'styled-components'
 export default function WorkspaceDetail({ workspaces }) {
   let { id } = useParams()
 
+  const iconPathArrow = '/icons/arrow-left.svg'
+
   const {
     name,
     description,
@@ -17,10 +19,11 @@ export default function WorkspaceDetail({ workspaces }) {
     picture,
   } = workspaces.find((workspace) => workspace._id === id)
 
-  console.log(name)
   return (
     <section>
-      <Link to="/">zurück</Link>
+      <Link to="/">
+        <img src={process.env.PUBLIC_URL + iconPathArrow} alt="" />
+      </Link>
       <ImageStyled src={process.env.PUBLIC_URL + picture} alt="" />
       <h3>{name}</h3>
       <div className="p-green">{description}</div>
