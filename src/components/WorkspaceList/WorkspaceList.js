@@ -5,8 +5,7 @@ import styled from 'styled-components'
 export default function WorkspaceList({ workspaces }) {
   return (
     <>
-      <h2>Coworking Spaces</h2>
-      <br />
+      <ListTitleStyled>Naturnahe Coworking Spaces</ListTitleStyled>
       <Grid>
         {workspaces.map((workspace) => (
           <Workspace workspace={workspace} key={workspace._id} />
@@ -20,4 +19,9 @@ const Grid = styled.div`
   display: grid;
   gap: 30px;
   justify-content: center;
+`
+const ListTitleStyled = styled.h3`
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 `

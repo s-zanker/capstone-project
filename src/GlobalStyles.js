@@ -48,9 +48,6 @@ h2 {
   font-weight: bold;
   line-height: 1.5;
   color: var(--darkgreen);
-  padding-top: 10px;
-  padding-bottom: 20px;
-  text-align: center;
 }
 
 h3 {

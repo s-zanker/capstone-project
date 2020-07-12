@@ -9,7 +9,9 @@ export default function Workspace({ workspace }) {
         <img src={process.env.PUBLIC_URL + workspace.picture} alt="" />
       </Link>
       <h4>{workspace.name}</h4>
-      <div className="p-green">{workspace.location}</div>
+      <div className="p-green">
+        {workspace.location + ' ( ' + workspace.state + ' )'}
+      </div>
       <div className="p-green">
         <a href={workspace.url} target="_blank" rel="noopener noreferrer">
           {workspace.url}
