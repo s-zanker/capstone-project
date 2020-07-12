@@ -15,10 +15,9 @@ function App() {
           <Route exact path="/">
             <WorkspaceList workspaces={workspaces} />
           </Route>
-          <Route
-            path="/workspace/:id"
-            children={<WorkspaceDetail workspaces={workspaces} />}
-          />
+          <Route path="/workspace/:id">
+            <WorkspaceDetail workspaces={workspaces} />
+          </Route>
         </Switch>
       </Main>
     </AppGrid>
