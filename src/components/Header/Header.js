@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function Header() {
+export default function Header({ title }) {
   return (
     <StyledHeader>
-      <h1>digitalnatur</h1>
+      <h1>{title}</h1>
     </StyledHeader>
   )
 }

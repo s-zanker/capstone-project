@@ -1,15 +1,25 @@
 import React from 'react'
-import Header from './components/Header/Header'
+import { Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
-import WorkspaceList from './components/WorkspaceList/WorkspaceList'
 import workspaces from './assets/workspaces.json'
+import Header from './components/Header/Header'
+import WorkspaceDetail from './components/WorkspaceDetail/WorkspaceDetail'
+import WorkspaceList from './components/WorkspaceList/WorkspaceList'
 
 function App() {
   return (
     <AppGrid>
-      <Header />
+      <Header title="digitalnatur" />
       <Main>
-        <WorkspaceList workspaces={workspaces} />
+        <Switch>
+          <Route exact path="/">
+            <WorkspaceList workspaces={workspaces} />
+          </Route>
+          <Route
+            path="/workspace/:id"
+            children={<WorkspaceDetail workspaces={workspaces} />}
+          />
+        </Switch>
       </Main>
     </AppGrid>
   )
@@ -26,4 +36,9 @@ const AppGrid = styled.div`
 const Main = styled.main`
   padding: 20px;
   overflow-y: scroll;
+  &::after {
+    content: '';
+    display: block;
+    height: 40px;
+  }
 `
