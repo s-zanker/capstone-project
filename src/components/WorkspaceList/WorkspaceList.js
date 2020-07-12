@@ -23,5 +23,5 @@ const Grid = styled.div`
 const ListTitleStyled = styled.h3`
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 `
