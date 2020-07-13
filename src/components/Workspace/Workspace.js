@@ -10,7 +10,7 @@ export default function Workspace({ workspace }) {
       </Link>
       <h4>{workspace.name}</h4>
       <div className="p-green">
-        {workspace.location + ' ( ' + workspace.state + ' )'}
+        {`${workspace.location} (${workspace.state})`}
       </div>
       <div className="p-green">
         <a href={workspace.url} target="_blank" rel="noopener noreferrer">
