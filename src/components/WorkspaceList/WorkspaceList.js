@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Workspace from '../Workspace/Workspace'
 import styled from 'styled-components'
+import Button from '../Button/Button'
+import TagList from '../TagList/TagList'
 
 export default function WorkspaceList({ workspaces }) {
+  const [tagListShown, setTagListShown] = useState(false)
   return (
     <>
       <ListTitleStyled>Naturnahe Coworking Spaces</ListTitleStyled>
+      <Button name="filter" onClick={toggleTagList} />
+      {tagListShown && <TagList />}
       <Grid>
         {workspaces.map((workspace) => (
           <Workspace workspace={workspace} key={workspace._id} />
@@ -13,6 +18,10 @@ export default function WorkspaceList({ workspaces }) {
       </Grid>
     </>
   )
+
+  function toggleTagList() {
+    setTagListShown(!tagListShown)
+  }
 }
 
 const Grid = styled.div`
