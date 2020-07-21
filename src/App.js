@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import workspaces from './assets/workspaces.json'
@@ -7,13 +7,21 @@ import WorkspaceDetail from './components/WorkspaceDetail/WorkspaceDetail'
 import WorkspaceList from './components/WorkspaceList/WorkspaceList'
 
 function App() {
+  const [currentWorkspaces, setCurrentWorkspaces] = useState([])
+
+  useEffect(() => {
+    console.log(workspaces.slice(0, 10))
+    setCurrentWorkspaces(workspaces.slice(0, 10))
+  }, [])
+
   return (
     <AppGrid>
       <Header title="digitalnatur" />
+      <button onClick={handleClick}>Click</button>
       <Main>
         <Switch>
           <Route exact path="/">
-            <WorkspaceList workspaces={workspaces} />
+            <WorkspaceList workspaces={currentWorkspaces} />
           </Route>
           <Route path="/workspace/:id">
             <WorkspaceDetail workspaces={workspaces} />
@@ -22,6 +30,12 @@ function App() {
       </Main>
     </AppGrid>
   )
+
+  function handleClick() {
+    setCurrentWorkspaces(
+      workspaces.slice(currentWorkspaces.length, currentWorkspaces.length + 10)
+    )
+  }
 }
 
 export default App
