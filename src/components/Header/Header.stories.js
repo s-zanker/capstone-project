@@ -6,4 +6,4 @@ export default {
   component: Header,
 }
 
-export const withTitle = () => <Header />
+export const withTitle = () => <Header title="digitalnatur" />

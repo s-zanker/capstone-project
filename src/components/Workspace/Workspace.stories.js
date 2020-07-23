@@ -9,10 +9,17 @@ export default {
 export const withMockData = () => (
   <Workspace
     workspace={{
-      _id: '5f046d06b8ff322a5ebd5c6a',
+      _id: '5f0734c2af7264771ca52652',
       name: 'Alsenhof',
+      description:
+        'Gemeinsam lassen wir nördlich von Hamburg einen nachhaltigen, innovativen und offenen Lebens- und Arbeitsort im Grünen entstehen!',
       location: 'Lägerdorf',
-      url: 'www.alsenhof.de',
+      street: 'Dorfstraße 15',
+      postcode: '25566',
+      state: 'Schleswig-Holstein',
+      url: 'https://www.alsenhof.de',
+      email: 'ulrich@coworkland.de',
+      phone: '+49 40 60942876',
       picture: '/images/justin-lim-acGAEEMguPo-unsplash.jpg',
     }}
   />
@@ -21,10 +28,17 @@ export const withMockData = () => (
 export const withoutAnUrl = () => (
   <Workspace
     workspace={{
-      _id: '5f046d06b8ff322a5ebd5c6a',
+      _id: '5f0734c2af7264771ca52652',
       name: 'Alsenhof',
+      description:
+        'Gemeinsam lassen wir nördlich von Hamburg einen nachhaltigen, innovativen und offenen Lebens- und Arbeitsort im Grünen entstehen!',
       location: 'Lägerdorf',
+      street: 'Dorfstraße 15',
+      postcode: '25566',
+      state: 'Schleswig-Holstein',
       url: '',
+      email: 'ulrich@coworkland.de',
+      phone: '+49 40 60942876',
       picture: '/images/justin-lim-acGAEEMguPo-unsplash.jpg',
     }}
   />
@@ -33,13 +47,18 @@ export const withoutAnUrl = () => (
 export const withoutAnImage = () => (
   <Workspace
     workspace={{
-      _id: '5f046d06b8ff322a5ebd5c6a',
+      _id: '5f0734c2af7264771ca52652',
       name: 'Alsenhof',
+      description:
+        'Gemeinsam lassen wir nördlich von Hamburg einen nachhaltigen, innovativen und offenen Lebens- und Arbeitsort im Grünen entstehen!',
       location: 'Lägerdorf',
-      url: 'www.alsenhof.de',
-      picture: '',
+      street: 'Dorfstraße 15',
+      postcode: '25566',
+      state: 'Schleswig-Holstein',
+      url: 'https://www.alsenhof.de',
+      email: 'ulrich@coworkland.de',
+      phone: '+49 40 60942876',
+      picture: ' ',
     }}
   />
 )
-
-export const withNoData = () => <Workspace workspace={{}} />

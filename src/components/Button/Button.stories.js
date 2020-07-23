@@ -8,5 +8,5 @@ export default {
 }
 
 export const withLabel = () => (
-  <Button name="Hallo" onClick={action('clicked')} />
+  <Button name="Filter" onClick={action('clicked')} />
 )

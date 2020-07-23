@@ -1,9 +1,9 @@
 import React from 'react'
 
 const styles = {
-  display: 'flex',
+  display: 'grid',
+  gap: '30px',
   justifyContent: 'center',
-  alignItems: 'center',
   padding: '100px',
 }
 const Center = ({ children }) => <div style={styles}>{children}</div>
