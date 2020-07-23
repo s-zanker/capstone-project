@@ -10,14 +10,13 @@ function App() {
   const [currentWorkspaces, setCurrentWorkspaces] = useState([])
 
   useEffect(() => {
-    console.log(workspaces.slice(0, 10))
+    //only the first 10 workspaces are displayed
     setCurrentWorkspaces(workspaces.slice(0, 10))
   }, [])
 
   return (
     <AppGrid>
       <Header title="digitalnatur" />
-      <button onClick={handleClick}>Click</button>
       <Main>
         <Switch>
           <Route exact path="/">
@@ -30,12 +29,6 @@ function App() {
       </Main>
     </AppGrid>
   )
-
-  function handleClick() {
-    setCurrentWorkspaces(
-      workspaces.slice(currentWorkspaces.length, currentWorkspaces.length + 10)
-    )
-  }
 }
 
 export default App

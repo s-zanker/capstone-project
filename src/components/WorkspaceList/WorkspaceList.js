@@ -9,9 +9,10 @@ export default function WorkspaceList({ workspaces }) {
   return (
     <>
       <ListTitleStyled>Naturnahe Coworking Spaces</ListTitleStyled>
-      <Button name="filter" onClick={toggleTagList} />
-      {tagListShown && <TagList />}
+
       <Grid>
+        <Button name="filter" onClick={toggleTagList} />
+        {tagListShown && <TagList tagList="tagList" />}
         {workspaces.map((workspace) => (
           <Workspace workspace={workspace} key={workspace._id} />
         ))}
@@ -32,5 +33,5 @@ const Grid = styled.div`
 const ListTitleStyled = styled.h3`
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 `

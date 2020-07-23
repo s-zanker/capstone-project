@@ -6,9 +6,15 @@ export default function Button({ name, onClick }) {
 }
 
 const ButtonStyled = styled.button`
-  background: var(--freshgreen);
-  border-radius: 5px;
   height: 25px;
-  width: 80px;
-  color: white;
+  width: 60px;
+  color: var(--freshgreen);
+  border-radius: 5px;
+  border: 1px solid var(--freshgreen);
+  cursor: pointer;
+
+  &:active {
+    background: var(--freshgreen);
+    color: white;
+  }
 `

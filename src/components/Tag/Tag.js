@@ -6,15 +6,14 @@ export default function Tag({ title }) {
 }
 
 const TagStyled = styled.span`
-  color: #9bb449;
+  color: var(--freshgreen);
   border-radius: 5px;
-  border: 1px solid #9bb449;
-  padding: 5px 10px;
+  border: 1px solid var(--freshgreen);
+  padding: 3px 6px;
   cursor: pointer;
 
-  &:hover,
-  &.active {
-    background: #9bb449;
+  &:active {
+    background: var(--freshgreen);
     color: white;
   }
 `
