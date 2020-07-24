@@ -10,7 +10,8 @@
     "url": "https://www.alsenhof.de",
     "email": "ulrich@coworkland.de",
     "phone": "+49 40 60942876",
-    "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg"
+    "picture": "/images/justin-lim-acGAEEMguPo-unsplash.jpg",
+    "tags": ["Garten", "Waldbaden", "Übernachtung", "Retreat"]
   },
   {
     "_id": "5f0734c24fa55124071002af",
@@ -23,7 +24,8 @@
     "url": "https://www.ammersee-denkerhaus.de ",
     "email": "hans-peter.sander@ammersee-denkerhaus.de",
     "phone": "+49 176 63722680",
-    "picture": "/images/alana-harris-seXVRaaZQuo-unsplash.jpg"
+    "picture": "/images/alana-harris-seXVRaaZQuo-unsplash.jpg",
+    "tags": ["im Grünen", "See", "Kanufahren", "Wandern"]
   },
   {
     "_id": "5f0734c2d32970aa8f73fced",
@@ -36,7 +38,8 @@
     "url": "http://www.gut-mechow.de",
     "email": "jean-pierre@coworkland.de",
     "phone": "+49 171 2219972",
-    "picture": "/images/croissant-fSuVFIDJwX4-unsplash.jpg"
+    "picture": "/images/croissant-fSuVFIDJwX4-unsplash.jpg",
+    "tags": ["Naturschutzgebiet", "See", "Wandern", "Reiten"]
   },
   {
     "_id": "5f0734c2f4361771f9282411",
@@ -49,7 +52,8 @@
     "url": "https://www.wirbauenzukunft.de",
     "email": "jetzt@wirbauenzukunft.de",
     "phone": "+49 176 322 282 79",
-    "picture": "/images/al-ghazali-3KmWk2WC_Z0-unsplash.jpg"
+    "picture": "/images/al-ghazali-3KmWk2WC_Z0-unsplash.jpg",
+    "tags": ["Übernachtung", "Retreat", "Garten", "Gärtnern", "See"]
   },
   {
     "_id": "5f0734c2847a4fdec1e8143f",
@@ -62,7 +66,8 @@
     "url": "https://www.tokunfthus.de ",
     "email": "info@tokunfthus.de",
     "phone": "+49 177 4147 159",
-    "picture": "/images/annie-spratt-wgivdx9dBdQ-unsplash.jpg"
+    "picture": "/images/annie-spratt-wgivdx9dBdQ-unsplash.jpg",
+    "tags": ["Garten", "Radfahren"]
   },
   {
     "_id": "5f0734c23932001859723555",
@@ -75,7 +80,8 @@
     "url": "https://www.annette-schumacher.de",
     "email": "coworkoldesloe@posteo.de",
     "phone": "+49 176 38 24 02 75",
-    "picture": "/images/cowomen-lWGRG9_RQHg-unsplash.jpg"
+    "picture": "/images/cowomen-lWGRG9_RQHg-unsplash.jpg",
+    "tags": ["Kanufahren", "Radfahren", "Wandern", "Stadtnah"]
   },
   {
     "_id": "5f0734c262a11b03b75d6602",
@@ -88,7 +94,8 @@
     "url": "https://www.wittenberge-pioneers.de",
     "email": "info@coworking-wittenberg.de",
     "phone": "+49 3877 984110",
-    "picture": "/images/andrea-davis-04G19lnpHcc-unsplash.jpg"
+    "picture": "/images/andrea-davis-04G19lnpHcc-unsplash.jpg",
+    "tags": ["Retreat", "Elbblick", "Kanufahren", "Wandern"]
   },
   {
     "_id": "5f0734c2a2bd26158b152382",
@@ -101,7 +108,8 @@
     "url": "",
     "email": "wiehler@wende.land",
     "phone": "+49 176 61711080",
-    "picture": "/images/eloise-ambursley-iRZqkdb8gK8-unsplash.jpg"
+    "picture": "/images/eloise-ambursley-iRZqkdb8gK8-unsplash.jpg",
+    "tags": ["Flüsse", "Weinberge", "Gärtnern", "Reiten", "Wandern"]
   },
   {
     "_id": "5f0734c26373c68e433610aa",
@@ -114,7 +122,8 @@
     "url": "",
     "email": "info@cocina-kiel.de",
     "phone": "+49 171 8253031",
-    "picture": "/images/helena-lopes-Pd8tLVGx2O4-unsplash.jpg"
+    "picture": "/images/helena-lopes-Pd8tLVGx2O4-unsplash.jpg",
+    "tags": ["Coaching", "Stadtnah"]
   },
   {
     "_id": "5f0734c2c0c96baa4e863355",
@@ -127,7 +136,8 @@
     "url": "http://www.alter-heuboden.de/",
     "email": "kontakt@engelundkolz.de",
     "phone": "+49 4340 79 29 010 ",
-    "picture": "/images/helena-lopes-UZe35tk5UoA-unsplash.jpg"
+    "picture": "/images/helena-lopes-UZe35tk5UoA-unsplash.jpg",
+    "tags": ["See", "im Grünen"]
   },
   {
     "_id": "5f0734c2df2f4d50bb604380",
@@ -140,7 +150,8 @@
     "url": "https://www.kiez-buero.de",
     "email": "info@kiez-buero.de",
     "phone": "+49 40 53327711",
-    "picture": "/images/janine-meuche-9VYKe5xRYNo-unsplash.jpg"
+    "picture": "/images/janine-meuche-9VYKe5xRYNo-unsplash.jpg",
+    "tags": ["Stadtnah", "Cafes", "Wochenmarkt"]
   },
   {
     "_id": "5f0734c21197f2ab33134090",
@@ -153,7 +164,8 @@
     "url": "https://www.gettorf.de",
     "email": "muenzberg-niemann@Gemeinde-Gettorf.de",
     "phone": "+49 171 2216823",
-    "picture": "/images/jennifer-latuperisa-andresen-lEZ9JaBfYR8-unsplash.jpg"
+    "picture": "/images/jennifer-latuperisa-andresen-lEZ9JaBfYR8-unsplash.jpg",
+    "tags": ["Stadtnah", "Tierpark"]
   },
   {
     "_id": "5f0734c2290873e4b000d672",
@@ -166,7 +178,8 @@
     "url": "https://www.westerwerk.com",
     "email": "info@westerwerk.com",
     "phone": "+49 177 5126789",
-    "picture": "/images/kristin-wilson-z3htkdHUh5w-unsplash.jpg"
+    "picture": "/images/kristin-wilson-z3htkdHUh5w-unsplash.jpg",
+    "tags": ["Stadtnah", "Kanufahren", "Radfahren"]
   },
   {
     "_id": "5f0734c2190efd6c83299b2c",
@@ -179,7 +192,8 @@
     "url": "https://www.wexelwirken.net",
     "email": "info@weXelwirken.net",
     "phone": "+49 7121 1360306",
-    "picture": "/images/mika-baumeister-LaqL8nxiacc-unsplash.jpg"
+    "picture": "/images/mika-baumeister-LaqL8nxiacc-unsplash.jpg",
+    "tags": ["Stadtnah", "Restaurants"]
   },
   {
     "_id": "5f0734c2886b0e6d595461f6",
@@ -192,7 +206,15 @@
     "url": "https://dstation.org/",
     "email": "office@dstation.org",
     "phone": "+49 5332 86 78 78 - 0",
-    "picture": "/images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg"
+    "picture": "/images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg",
+    "tags": [
+      "Übernachtung",
+      "Retreat",
+      "Werkstatt",
+      "Garten",
+      "Gärtnern",
+      "Waldbaden"
+    ]
   },
   {
     "_id": "5f0734c20a8891a1d11bb95b",
@@ -205,7 +227,15 @@
     "url": "https://mini-workspace-aukrug.business.site/",
     "email": "c.robold@vondergeest.com",
     "phone": "+49 176 61267309",
-    "picture": "/images/alana-harris-seXVRaaZQuo-unsplash.jpg"
+    "picture": "/images/alana-harris-seXVRaaZQuo-unsplash.jpg",
+    "tags": [
+      "Übernachtung",
+      "Garten",
+      "Angeln",
+      "Golf",
+      "Reiten",
+      "Segelfliegen"
+    ]
   },
   {
     "_id": "5f0734c208cdc6c526076c6e",
@@ -218,7 +248,15 @@
     "url": "https://www.cobaas.de",
     "email": "info@cobaas.de",
     "phone": "+49 175 4177872",
-    "picture": "/images/andrea-davis-04G19lnpHcc-unsplash.jpg"
+    "picture": "/images/andrea-davis-04G19lnpHcc-unsplash.jpg",
+    "tags": [
+      "Übernachtung",
+      "Retreat",
+      "Garten",
+      "Angeln",
+      "Kanufahren",
+      "Wandern"
+    ]
   },
   {
     "_id": "5f0734c2bdb91b9549d16b10",
@@ -231,7 +269,8 @@
     "url": "https://ms39-soltau.org/",
     "email": "jessicab@ccwerbung.de",
     "phone": "+49 151 50488506",
-    "picture": "/images/al-ghazali-3KmWk2WC_Z0-unsplash.jpg"
+    "picture": "/images/al-ghazali-3KmWk2WC_Z0-unsplash.jpg",
+    "tags": ["Stadtnah", "Radfahren", "Yoga", "Retreat", "Wochenmarkt"]
   },
   {
     "_id": "5f0734c2e9866e9f7f48440c",
@@ -244,7 +283,8 @@
     "url": "https://herrenhausvonhollander.de/",
     "email": "post@herrenhausvonhollander.de",
     "phone": "+49 160 2003444",
-    "picture": "/images/annie-spratt-wgivdx9dBdQ-unsplash.jpg"
+    "picture": "/images/annie-spratt-wgivdx9dBdQ-unsplash.jpg",
+    "tags": ["Garten", "Park", "See"]
   },
   {
     "_id": "5f0734c23a2fd4fe817a0102",
@@ -257,7 +297,8 @@
     "url": "https://www.hof-viehbrook.de/",
     "email": "info@hof-viehbrook.de",
     "phone": "+49 4394 992356",
-    "picture": "/images/cowomen-lWGRG9_RQHg-unsplash.jpg"
+    "picture": "/images/cowomen-lWGRG9_RQHg-unsplash.jpg",
+    "tags": ["Übernachtung", "Retreat", "Garten", "Gärtnern", "Waldbaden"]
   },
   {
     "_id": "5f0734c2a325e68ced7869b1",
@@ -270,7 +311,8 @@
     "url": "https://anscharcampus.de/",
     "email": "s.mirpourian@anscharcampus.de",
     "phone": "+49 15739696508",
-    "picture": "/images/croissant-fSuVFIDJwX4-unsplash.jpg"
+    "picture": "/images/croissant-fSuVFIDJwX4-unsplash.jpg",
+    "tags": ["Garten", "Stadtnah", "Wochenmarkt"]
   },
   {
     "_id": "5f0734c2890edfa722e85c32",
@@ -283,7 +325,8 @@
     "url": "https://kiez-buero.de/neustrelitz/",
     "email": "bjoern.budack@kiez-buero.de",
     "phone": "+49 3981 4899334",
-    "picture": "/images/eloise-ambursley-iRZqkdb8gK8-unsplash.jpg"
+    "picture": "/images/eloise-ambursley-iRZqkdb8gK8-unsplash.jpg",
+    "tags": ["Stadtnah"]
   },
   {
     "_id": "5f0734c21e844b2d80fb6336",
@@ -296,7 +339,8 @@
     "url": "https://www.torfhub.de/",
     "email": "torfhub@web.de",
     "phone": "+49 1779776805",
-    "picture": "/images/helena-lopes-Pd8tLVGx2O4-unsplash.jpg"
+    "picture": "/images/helena-lopes-Pd8tLVGx2O4-unsplash.jpg",
+    "tags": ["Radfahren", "Wandern", "Restaurants"]
   },
   {
     "_id": "5f0734c2fb7687559cad9a15",
@@ -309,6 +353,7 @@
     "url": "https://innomania-cowork.de/",
     "email": "mail@innomania-cowork.de",
     "phone": "+49 4131391116",
-    "picture": "/images/helena-lopes-UZe35tk5UoA-unsplash.jpg"
+    "picture": "/images/helena-lopes-UZe35tk5UoA-unsplash.jpg",
+    "tags": ["Golf", "Waldbaden", "Kanufahren", "Radfahren", "Yoga", "Stadtnah"]
   }
 ]
