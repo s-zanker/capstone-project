@@ -1,19 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function Tag({ title }) {
-  return <TagStyled>{title}</TagStyled>
+export default function Tag({ title, clickable }) {
+  return <TagStyled clickable={clickable}>{title}</TagStyled>
 }
 
 const TagStyled = styled.span`
-  color: var(--freshgreen);
-  border-radius: 5px;
-  border: 1px solid var(--freshgreen);
-  padding: 3px 6px;
-  cursor: pointer;
+  color: var(--darkgreen);
+  border-radius: 6px;
+  border: 1px solid var(--darkgreen);
+  padding: 4px 8px;
+  margin: 6px 6px 0px 0px;
+  cursor: ${(props) => props.clickable || 'default'};
 
   &:active {
-    background: var(--freshgreen);
-    color: white;
+    background: ${(props) =>
+      props.clickable ? 'var(--darkgreen)' : 'transparent'};
+    color: ${(props) => (props.clickable ? 'white' : 'var(--darkgreen)')};
   }
 `

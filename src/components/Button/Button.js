@@ -6,6 +6,7 @@ export default function Button({ name, onClick }) {
 }
 
 const ButtonStyled = styled.button`
+  background: transparent;
   height: 25px;
   width: 60px;
   color: var(--freshgreen);

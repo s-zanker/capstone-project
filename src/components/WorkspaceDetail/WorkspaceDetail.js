@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import styled from 'styled-components'
+import WorkspaceTagList from '../WorkspaceTagList/WorkspaceTagList'
 
 export default function WorkspaceDetail({ workspaces }) {
   let { id } = useParams()
@@ -17,6 +18,7 @@ export default function WorkspaceDetail({ workspaces }) {
     email,
     phone,
     picture,
+    tags,
   } = workspaces.find((workspace) => workspace._id === id)
 
   return (
@@ -44,6 +46,8 @@ export default function WorkspaceDetail({ workspaces }) {
           {url}
         </a>
       </div>
+      <br />
+      <WorkspaceTagList tagList={tags} />
     </section>
   )
 }

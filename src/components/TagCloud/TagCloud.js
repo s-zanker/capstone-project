@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function TagList({ tagList }) {
-  return <TagContainerStyled>{tagList}</TagContainerStyled>
+export default function TagCloud({ tagList }) {
+  return <TagCloudContainerStyled>{tagList}</TagCloudContainerStyled>
 }
 
-const TagContainerStyled = styled.div`
+const TagCloudContainerStyled = styled.div`
   background: white;
   border: 1px solid var(--freshgreen);
   border-radius: 5px;

@@ -1,18 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Workspace from '../Workspace/Workspace'
 import styled from 'styled-components'
 import Button from '../Button/Button'
-import TagList from '../TagList/TagList'
+import TagCloud from '../TagCloud/TagCloud'
 
 export default function WorkspaceList({ workspaces }) {
-  const [tagListShown, setTagListShown] = useState(false)
+  const [tagCloudShown, setTagCloudShown] = useState(false)
+
+  useEffect(() => {
+    console.log('useEffect - tagCloudShown: ' + tagCloudShown)
+  }, [tagCloudShown])
+
   return (
     <>
       <ListTitleStyled>Naturnahe Coworking Spaces</ListTitleStyled>
 
       <Grid>
-        <Button name="filter" onClick={toggleTagList} />
-        {tagListShown && <TagList tagList="tagList" />}
+        <Button name="filter" onClick={toggleTagCloud} />
+        {tagCloudShown && <TagCloud tagList="platzhalter für die tags" />}
         {workspaces.map((workspace) => (
           <Workspace workspace={workspace} key={workspace._id} />
         ))}
@@ -20,8 +25,9 @@ export default function WorkspaceList({ workspaces }) {
     </>
   )
 
-  function toggleTagList() {
-    setTagListShown(!tagListShown)
+  function toggleTagCloud() {
+    setTagCloudShown(!tagCloudShown)
+    console.log('onclick tagCloudShown: ' + tagCloudShown)
   }
 }
 
