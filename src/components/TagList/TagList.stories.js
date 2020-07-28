@@ -1,5 +1,5 @@
 import React from 'react'
-import WorkspaceTagList from './WorkspaceTagList'
+import WorkspaceTagList from './TagList'
 
 export default {
   title: 'WorkspaceTagList',

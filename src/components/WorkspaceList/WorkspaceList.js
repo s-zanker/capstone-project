@@ -6,6 +6,35 @@ import TagCloud from '../TagCloud/TagCloud'
 
 export default function WorkspaceList({ workspaces }) {
   const [tagCloudShown, setTagCloudShown] = useState(false)
+  const tagList = [
+    'Garten',
+    'Waldbaden',
+    'Übernachtung',
+    'Retreat',
+    'im Grünen',
+    'See',
+    'Kanufahren',
+    'Wandern',
+    'Naturschutzgebiet',
+    'Reiten',
+    'Gärtnern',
+    'Radfahren',
+    'Stadtnah',
+    'Elbblick',
+    'Flüsse',
+    'Weinberge',
+    'Coaching',
+    'Cafes',
+    'Wochenmarkt',
+    'Tierpark',
+    'Restaurants',
+    'Werkstatt',
+    'Angeln',
+    'Golf',
+    'Segelfliegen',
+    'Yoga',
+    'Park',
+  ]
 
   useEffect(() => {
     console.log('useEffect - tagCloudShown: ' + tagCloudShown)
@@ -17,7 +46,7 @@ export default function WorkspaceList({ workspaces }) {
 
       <Grid>
         <Button name="filter" onClick={toggleTagCloud} />
-        {tagCloudShown && <TagCloud tagList="platzhalter für die tags" />}
+        {tagCloudShown && <TagCloud tagList={tagList} />}
         {workspaces.map((workspace) => (
           <Workspace workspace={workspace} key={workspace._id} />
         ))}

@@ -1,8 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function Tag({ title, clickable }) {
-  return <TagStyled clickable={clickable}>{title}</TagStyled>
+export default function Tag({ title, clickable, onClick }) {
+  return (
+    <TagStyled clickable={clickable} onClick={onClick}>
+      {title}
+    </TagStyled>
+  )
 }
 
 const TagStyled = styled.span`

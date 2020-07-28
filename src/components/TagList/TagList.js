@@ -2,12 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import Tag from '../Tag/Tag'
 
-export default function WorkspaceTagList({ tagList }) {
+export default function TagList({ tagList, onClick }) {
   return (
     <>
       <TagContainerStyled>
         {tagList.map((tag) => (
-          <Tag title={tag} clickable />
+          <Tag title={tag} onClick={onClick} />
         ))}
       </TagContainerStyled>
     </>
