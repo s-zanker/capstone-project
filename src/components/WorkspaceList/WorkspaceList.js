@@ -45,8 +45,10 @@ export default function WorkspaceList({ workspaces }) {
       <ListTitleStyled>Naturnahe Coworking Spaces</ListTitleStyled>
 
       <Grid>
-        <Button name="filter" onClick={toggleTagCloud} />
-        {tagCloudShown && <TagCloud tagList={tagList} />}
+        <Button name="filtern" onClick={toggleTagCloud} />
+        {tagCloudShown && (
+          <TagCloud tagList={tagList} onClick={handleClickOnTag} />
+        )}
         {workspaces.map((workspace) => (
           <Workspace workspace={workspace} key={workspace._id} />
         ))}
@@ -57,6 +59,10 @@ export default function WorkspaceList({ workspaces }) {
   function toggleTagCloud() {
     setTagCloudShown(!tagCloudShown)
     console.log('onclick tagCloudShown: ' + tagCloudShown)
+  }
+
+  function handleClickOnTag(name) {
+    console.log('tag: ' + name)
   }
 }
 

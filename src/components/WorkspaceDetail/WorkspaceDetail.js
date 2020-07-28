@@ -47,7 +47,7 @@ export default function WorkspaceDetail({ workspaces }) {
         </a>
       </div>
       <br />
-      <TagList tagList={tags} />
+      <TagList tagList={tags} clickable={false} />
     </section>
   )
 }

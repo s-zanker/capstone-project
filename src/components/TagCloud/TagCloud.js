@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import TagList from '../TagList/TagList'
 
-export default function TagCloud({ tagList }) {
+export default function TagCloud({ tagList, onClick }) {
   return (
     <>
       <TagCloudContainerStyled>
-        <TagList tagList={tagList} />
+        <TagList tagList={tagList} onClick={onClick} clickable={true} />
       </TagCloudContainerStyled>
     </>
   )
