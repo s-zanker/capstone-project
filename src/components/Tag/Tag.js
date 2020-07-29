@@ -1,24 +1,23 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { useEffect } from '@storybook/addons'
 
-export default function Tag({ title, clickable, onClick }) {
+export default function Tag({ title, onClick, clickable }) {
   const [isClicked, setIsClicked] = useState(false)
-  console.log(isClicked)
 
-  if (clickable) {
-    return (
-      <TagStyled clicked={isClicked} onClick={clickFunction}>
-        {title}
-      </TagStyled>
-    )
-  } else {
-    return <TagStyled clicked={isClicked}>{title}</TagStyled>
-  }
+  return clickable ? (
+    <TagStyled clicked={isClicked} onClick={handleClick}>
+      {title}
+    </TagStyled>
+  ) : (
+    <TagStyled>{title}</TagStyled>
+  )
 
-  function clickFunction() {
-    isClicked || onClick(title)
+  function handleClick() {
+    console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    console.log('Tag - handleClick()')
+    onClick(title, isClicked)
     setIsClicked(!isClicked)
+    console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   }
 }
 

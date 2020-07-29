@@ -6,6 +6,7 @@ import TagCloud from '../TagCloud/TagCloud'
 
 export default function WorkspaceList({ workspaces }) {
   const [tagCloudShown, setTagCloudShown] = useState(false)
+  const [selectedTags, setSelectedTags] = useState([])
   const tagList = [
     'Garten',
     'Waldbaden',
@@ -40,6 +41,10 @@ export default function WorkspaceList({ workspaces }) {
     console.log('useEffect - tagCloudShown: ' + tagCloudShown)
   }, [tagCloudShown])
 
+  useEffect(() => {
+    console.log('useEffect - setSelectedTags: ' + selectedTags)
+  }, [selectedTags])
+
   return (
     <>
       <ListTitleStyled>Naturnahe Coworking Spaces</ListTitleStyled>
@@ -61,8 +66,19 @@ export default function WorkspaceList({ workspaces }) {
     console.log('onclick tagCloudShown: ' + tagCloudShown)
   }
 
-  function handleClickOnTag(name) {
-    console.log('tag: ' + name)
+  function handleClickOnTag(tagTitle, tagIsSelected) {
+    console.log('--------------------------------')
+    console.log('WorkspaceList - handleClickOnTag')
+    console.log('tag: ' + tagTitle)
+
+    if (!tagIsSelected && !selectedTags.includes(tagTitle)) {
+      setSelectedTags([...selectedTags, tagTitle])
+    } else {
+      const updatedSelectedTags = selectedTags.filter((tag) => tag !== tagTitle)
+      setSelectedTags([...updatedSelectedTags])
+    }
+
+    console.log('--------------------------------')
   }
 }
 
