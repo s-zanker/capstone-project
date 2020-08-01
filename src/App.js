@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     //only the first 10 workspaces are displayed
-    setCurrentWorkspaces(workspaces.slice(0, 10))
+    setCurrentWorkspaces(workspaces.slice(0, 25))
   }, [])
 
   return (

@@ -2,14 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 
 export default function Header({ title }) {
+  const logoPath = '/icons/digitalnatur-logo.svg'
   return (
-    <StyledHeader>
-      <h1>{title}</h1>
-    </StyledHeader>
+    <HeaderStyled>
+      <img src={process.env.PUBLIC_URL + logoPath} alt="" />
+    </HeaderStyled>
   )
 }
 
-const StyledHeader = styled.header`
+const HeaderStyled = styled.header`
   background-color: var(--freshgreen);
   border-bottom: 1px solid var(--freshgreen);
   display: flex;

@@ -24,10 +24,10 @@ export default function WorkspaceDetail({ workspaces }) {
   return (
     <section>
       <Link to="/">
-        <img src={process.env.PUBLIC_URL + iconPathArrow} alt="" />
+        <img src={iconPathArrow} alt="" />
       </Link>
-      <ImageStyled src={process.env.PUBLIC_URL + picture} alt="" />
-      <h3>{name}</h3>
+      <ImageStyled src={picture} alt="" />
+      <h2>{name}</h2>
       <div className="p-green">{description}</div>
       <br />
       <h4>Kontakt</h4>

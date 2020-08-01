@@ -5,6 +5,10 @@ import Button from '../Button/Button'
 import TagCloud from '../TagCloud/TagCloud'
 
 export default function WorkspaceList({ workspaces }) {
+  const arrowDown = '/icons/arrow_down_freshgreen.svg'
+  const arrowUp = '/icons/arrow_up_freshgreen.svg'
+  const filterBtnTxt = 'Finde deinen Traumplatz'
+  const listTitle = 'naturnahe Coworking Spaces'
   const [tagCloudShown, setTagCloudShown] = useState(false)
   const [selectedTags, setSelectedTags] = useState([])
   const tagList = [
@@ -47,10 +51,14 @@ export default function WorkspaceList({ workspaces }) {
 
   return (
     <>
-      <ListTitleStyled>Naturnahe Coworking Spaces</ListTitleStyled>
+      <ListTitleStyled>{listTitle.toUpperCase()}</ListTitleStyled>
 
       <Grid>
-        <Button name="filtern" onClick={toggleTagCloud} />
+        <Button
+          name={filterBtnTxt}
+          onClick={toggleTagCloud}
+          icon={!tagCloudShown ? arrowDown : arrowUp}
+        />
         {tagCloudShown && (
           <TagCloud tagList={tagList} onClick={handleClickOnTag} />
         )}
@@ -89,6 +97,6 @@ const Grid = styled.div`
 `
 const ListTitleStyled = styled.h3`
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 `

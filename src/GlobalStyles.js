@@ -38,7 +38,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: 'Chivo', serif;
+  font-family: 'Muli', serif;
   font-weight: normal;
   font-style: normal;
   letter-spacing: normal;
@@ -51,16 +51,15 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 22px;
   line-height: 1.5;
   color: var(--darkgreen);
 }
 
 h3 {
-  font-size: 25px;
-  line-height: 1.5;
-  color: var(--darkgreen);
+  font-size: 20px;
+  font-weight: 20;
+  color: var(--freshgreen);
 }
 
 h4 {

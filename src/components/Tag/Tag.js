@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 
 export default function Tag({ title, onClick, clickable }) {
-  const [isClicked, setIsClicked] = useState(false)
+  const [isSelected, setIsSelected] = useState(false)
 
   return clickable ? (
-    <TagStyled clicked={isClicked} onClick={handleClick}>
+    <TagStyled clicked={isSelected} onClick={handleClick}>
       {title}
     </TagStyled>
   ) : (
@@ -13,11 +13,11 @@ export default function Tag({ title, onClick, clickable }) {
   )
 
   function handleClick() {
-    console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
     console.log('Tag - handleClick()')
-    onClick(title, isClicked)
-    setIsClicked(!isClicked)
-    console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    onClick(title, isSelected)
+    setIsSelected(!isSelected)
+    console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   }
 }
 

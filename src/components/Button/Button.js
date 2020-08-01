@@ -1,21 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
+import Icon from '../Icon/Icon'
 
-export default function Button({ name, onClick }) {
-  return <ButtonStyled onClick={onClick}>{name}</ButtonStyled>
+export default function Button({ name, onClick, icon }) {
+  return (
+    <>
+      <ButtonStyled onClick={onClick}>
+        {name}
+        <Icon icon={icon} />
+      </ButtonStyled>
+    </>
+  )
 }
 
 const ButtonStyled = styled.button`
-  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
   height: 25px;
-  width: 60px;
+  width: 100%;
   color: var(--freshgreen);
   border-radius: 5px;
   border: 1px solid var(--freshgreen);
   cursor: pointer;
-
-  &:active {
-    background: var(--freshgreen);
-    color: white;
-  }
 `
