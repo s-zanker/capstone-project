@@ -9,7 +9,7 @@ export default function Tag({ title, onClick, clickable }) {
       {title}
     </TagStyled>
   ) : (
-    <TagStyled>{title}</TagStyled>
+    <TagDetailStyled>{title}</TagDetailStyled>
   )
 
   function handleClick() {
@@ -22,13 +22,20 @@ export default function Tag({ title, onClick, clickable }) {
 }
 
 const TagStyled = styled.span`
-  color: ${(props) => (props.clicked ? 'white' : 'var(--darkgreen)')};
+  color: ${(props) => (props.clicked ? 'white' : 'var(--freshgreen)')};
   border-radius: 6px;
-  border: 1px solid var(--darkgreen);
+  border: 1px solid var(--freshgreen);
   padding: 4px 8px;
   margin: 6px 6px 0px 0px;
   cursor: ${(props) => props.clicked || 'default'};
-
   background: ${(props) =>
-    props.clicked ? 'var(--darkgreen)' : 'transparent'};
+    props.clicked ? 'var(--freshgreen)' : 'transparent'};
+`
+const TagDetailStyled = styled.span`
+  color: var(--darkgreen);
+  border-radius: 5px;
+  border: 1px solid var(--darkgreen);
+  padding: 2px 6px;
+  margin: 6px 6px 0px 0px;
+  background: 'transparent';
 `

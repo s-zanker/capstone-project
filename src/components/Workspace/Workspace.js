@@ -6,7 +6,7 @@ export default function Workspace({ workspace }) {
   return (
     <StyledWorkspaceItem>
       <Link to={`/workspace/${workspace._id}`}>
-        <img src={process.env.PUBLIC_URL + workspace.picture} alt="" />
+        <ImageStyled src={process.env.PUBLIC_URL + workspace.picture} alt="" />
       </Link>
       <h4>{workspace.name}</h4>
       <div className="p-green">
@@ -29,4 +29,8 @@ const StyledWorkspaceItem = styled.div`
   div {
     margin-left: 10px;
   }
+`
+
+const ImageStyled = styled.img`
+  border-radius: 5px;
 `

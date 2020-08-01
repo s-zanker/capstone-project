@@ -2,11 +2,12 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import styled from 'styled-components'
 import TagList from '../TagList/TagList'
+import Icon from '../Icon/Icon'
 
 export default function WorkspaceDetail({ workspaces }) {
   let { id } = useParams()
 
-  const iconPathArrow = '/icons/arrow-left.svg'
+  const iconArrowLeft = '/icons/arrow-left.svg'
 
   const {
     name,
@@ -24,7 +25,7 @@ export default function WorkspaceDetail({ workspaces }) {
   return (
     <section>
       <Link to="/">
-        <img src={iconPathArrow} alt="" />
+        <Icon icon={iconArrowLeft} />
       </Link>
       <ImageStyled src={picture} alt="" />
       <h2>{name}</h2>
@@ -55,4 +56,5 @@ export default function WorkspaceDetail({ workspaces }) {
 const ImageStyled = styled.img`
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 5px;
 `
