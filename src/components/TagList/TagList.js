@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Tag from '../Tag/Tag'
 
 export default function TagList({ tagList, onClick, clickable }) {
+  useEffect(() => {
+    //console.log('TagList - useEffect')
+  })
   return (
     <>
       <TagContainerStyled>

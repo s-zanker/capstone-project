@@ -9,8 +9,6 @@ export default function WorkspaceList({ workspaces }) {
   const arrowUp = '/icons/arrow_up_freshgreen.svg'
   const filterBtnTxt = 'Finde deinen Traumplatz'
   const listTitle = 'naturnahe Coworking Spaces'
-  const [tagCloudShown, setTagCloudShown] = useState(false)
-  const [selectedTags, setSelectedTags] = useState([])
   const tagList = [
     'Garten',
     'Waldbaden',
@@ -40,13 +38,15 @@ export default function WorkspaceList({ workspaces }) {
     'Yoga',
     'Park',
   ]
+  const [tagCloudShown, setTagCloudShown] = useState(false)
+  const [selectedTags, setSelectedTags] = useState([])
 
   useEffect(() => {
-    console.log('useEffect - tagCloudShown: ' + tagCloudShown)
+    //console.log('WorkspaceList - useEffect - tagCloudShown: ' + tagCloudShown)
   }, [tagCloudShown])
 
   useEffect(() => {
-    console.log('useEffect - setSelectedTags: ' + selectedTags)
+    console.log('WorkspaceList - useEffect - setSelectedTags: ' + selectedTags)
   }, [selectedTags])
 
   return (
@@ -71,13 +71,13 @@ export default function WorkspaceList({ workspaces }) {
 
   function toggleTagCloud() {
     setTagCloudShown(!tagCloudShown)
-    console.log('onclick tagCloudShown: ' + tagCloudShown)
   }
 
   function handleClickOnTag(tagTitle, tagIsSelected) {
-    console.log('--------------------------------')
-    console.log('WorkspaceList - handleClickOnTag')
-    console.log('tag: ' + tagTitle)
+    //console.log('--------------------------------')
+    //console.log('WorkspaceList - handleClickOnTag')
+    //console.log('tag: ' + tagTitle)
+    //console.log('tagIsSelected: ' + tagIsSelected)
 
     if (!tagIsSelected && !selectedTags.includes(tagTitle)) {
       setSelectedTags([...selectedTags, tagTitle])
@@ -86,7 +86,7 @@ export default function WorkspaceList({ workspaces }) {
       setSelectedTags([...updatedSelectedTags])
     }
 
-    console.log('--------------------------------')
+    //console.log('--------------------------------')
   }
 }
 

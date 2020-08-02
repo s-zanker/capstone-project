@@ -56,5 +56,4 @@ export default function WorkspaceDetail({ workspaces }) {
 const ImageStyled = styled.img`
   margin-top: 10px;
   margin-bottom: 10px;
-  border-radius: 5px;
 `

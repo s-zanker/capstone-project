@@ -22,13 +22,13 @@ export default createGlobalStyle`
 body {
   margin: 0 auto;
   background-color: var(--lightgreen);
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 14px;
   color: var(--darkgreen);
 }
 
 button{
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 14px;
 }
 

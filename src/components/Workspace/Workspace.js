@@ -32,5 +32,5 @@ const StyledWorkspaceItem = styled.div`
 `
 
 const ImageStyled = styled.img`
-  border-radius: 5px;
+  border-radius: 0px;
 `

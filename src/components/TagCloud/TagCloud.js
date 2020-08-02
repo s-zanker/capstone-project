@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import TagList from '../TagList/TagList'
 
 export default function TagCloud({ tagList, onClick }) {
+  useEffect(() => {
+    //console.log('TagCloud - useEffect')
+  })
+
   return (
     <>
       <TagCloudContainerStyled>
