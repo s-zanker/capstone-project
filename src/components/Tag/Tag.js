@@ -8,7 +8,7 @@ export default function Tag({ title, onClick, clickable }) {
 
   useEffect(() => {
     localStorage.setItem(title, isSelected)
-    console.log('Tag - useEffect: ' + title + ' isSelected: ' + isSelected)
+    //console.log('Tag - useEffect: ' + title + ' isSelected: ' + isSelected)
   }, [isSelected, title])
 
   return clickable ? (
@@ -20,11 +20,8 @@ export default function Tag({ title, onClick, clickable }) {
   )
 
   function handleClick() {
-    //console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
-    //console.log('Tag - handleClick()')
     onClick(title, isSelected)
     setIsSelected(!isSelected)
-    //console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   }
 }
 

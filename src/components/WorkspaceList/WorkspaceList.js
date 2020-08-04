@@ -7,7 +7,7 @@ import TagCloud from '../TagCloud/TagCloud'
 export default function WorkspaceList({ workspaces }) {
   const arrowDown = '/icons/arrow_down_freshgreen.svg'
   const arrowUp = '/icons/arrow_up_freshgreen.svg'
-  const filterBtnTxt = 'Finde deinen Traumplatz'
+  const filterBtnTxt = 'Finde einen Space, der zu dir passt'
   const listTitle = 'naturnahe Coworking Spaces'
   const tagList = [
     'Garten',
@@ -39,14 +39,21 @@ export default function WorkspaceList({ workspaces }) {
     'Park',
   ]
   const [tagCloudShown, setTagCloudShown] = useState(false)
-  const [selectedTags, setSelectedTags] = useState([])
+  const [selectedTags, setSelectedTags] = useState(
+    JSON.parse(localStorage.getItem('selectedTags')) || []
+  )
+
+  useEffect(() => {
+    //console.log('Mounting WorkspaceList - selectedTags: ' + selectedTags)
+  }, [])
 
   useEffect(() => {
     //console.log('WorkspaceList - useEffect - tagCloudShown: ' + tagCloudShown)
   }, [tagCloudShown])
 
   useEffect(() => {
-    console.log('WorkspaceList - useEffect - setSelectedTags: ' + selectedTags)
+    localStorage.setItem('selectedTags', JSON.stringify(selectedTags))
+    //console.log('WorkspaceList - useEffect - setSelectedTags: ' + selectedTags)
   }, [selectedTags])
 
   return (
@@ -74,19 +81,21 @@ export default function WorkspaceList({ workspaces }) {
   }
 
   function handleClickOnTag(tagTitle, tagIsSelected) {
-    //console.log('--------------------------------')
-    //console.log('WorkspaceList - handleClickOnTag')
-    //console.log('tag: ' + tagTitle)
-    //console.log('tagIsSelected: ' + tagIsSelected)
+    console.log('--------------------------------')
+    console.log('WorkspaceList - handleClickOnTag')
+    console.log('tag: ' + tagTitle)
+    console.log('tagIsSelected: ' + tagIsSelected)
 
     if (!tagIsSelected && !selectedTags.includes(tagTitle)) {
-      setSelectedTags([...selectedTags, tagTitle])
+      const updatedTags = [...selectedTags, tagTitle]
+      setSelectedTags(updatedTags)
     } else {
       const updatedSelectedTags = selectedTags.filter((tag) => tag !== tagTitle)
       setSelectedTags([...updatedSelectedTags])
+      console.log('tag wird gelöscht')
     }
 
-    //console.log('--------------------------------')
+    console.log('--------------------------------')
   }
 }
 

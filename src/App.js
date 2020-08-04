@@ -7,12 +7,18 @@ import WorkspaceDetail from './components/WorkspaceDetail/WorkspaceDetail'
 import WorkspaceList from './components/WorkspaceList/WorkspaceList'
 
 function App() {
-  const [currentWorkspaces, setCurrentWorkspaces] = useState([])
+  const [currentWorkspaces, setCurrentWorkspaces] = useState(workspaces)
+  const selectedTagsLocalStorage =
+    JSON.parse(localStorage.getItem('selectedTags')) || []
 
   useEffect(() => {
-    //only the first 10 workspaces are displayed
-    setCurrentWorkspaces(workspaces.slice(0, 25))
+    if (selectedTagsLocalStorage.length > 0) {
+      filterWorkspaces()
+    }
+    // eslint-disable-next-line
   }, [])
+
+  useEffect(() => {}, [currentWorkspaces])
 
   return (
     <AppGrid>
@@ -29,6 +35,32 @@ function App() {
       </Main>
     </AppGrid>
   )
+
+  function filterWorkspaces() {
+    console.log('filterWorkspaces() ------------------------------')
+    console.log('selectedTagsLocalStorage: ' + selectedTagsLocalStorage)
+
+    const workspacesToFilter = []
+    const namesOfWorkspacesToFilter = []
+
+    selectedTagsLocalStorage.map((tagToFilter) => {
+      console.log('tagToFilter: ' + tagToFilter)
+
+      workspaces.map((workspace) => {
+        if (workspace.tags.includes(tagToFilter)) {
+          console.log('Tag gefunden in: ' + workspace.name)
+          if (!namesOfWorkspacesToFilter.includes(workspace.name)) {
+            namesOfWorkspacesToFilter.push(workspace.name)
+            workspacesToFilter.push(workspace)
+          }
+        }
+      })
+    })
+
+    console.log('namesOfWorkspacesToFilter: ' + namesOfWorkspacesToFilter)
+
+    setCurrentWorkspaces(workspacesToFilter)
+  }
 }
 
 export default App
