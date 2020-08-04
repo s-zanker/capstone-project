@@ -14,7 +14,6 @@ function App() {
 
   useEffect(() => {
     if (selectedTagsLocalStorage.length > 0) {
-      //filterWorkspacesWithOneTag()
       filterWorkspacesWithAllTags()
     }
     // eslint-disable-next-line
@@ -69,7 +68,7 @@ function App() {
     return arraySorted
   }
 
-  function filterWorkspacesWithOneTag() {
+  /* function filterWorkspacesWithOneTag() {
     console.log('filterWorkspaces() ------------------------------')
     console.log('selectedTagsLocalStorage: ' + selectedTagsLocalStorage)
 
@@ -93,7 +92,7 @@ function App() {
     console.log('namesOfWorkspacesToFilter: ' + namesOfWorkspacesToFilter)
 
     setCurrentWorkspaces(workspacesToFilter)
-  }
+  } */
 }
 
 export default App

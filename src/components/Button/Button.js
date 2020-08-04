@@ -20,6 +20,7 @@ const ButtonStyled = styled.button`
   background: white;
   height: 25px;
   width: 100%;
+  min-width: 335px;
   color: var(--freshgreen);
   border-radius: 5px;
   border: 1px solid var(--freshgreen);
