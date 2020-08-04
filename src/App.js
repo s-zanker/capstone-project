@@ -8,12 +8,14 @@ import WorkspaceList from './components/WorkspaceList/WorkspaceList'
 
 function App() {
   const [currentWorkspaces, setCurrentWorkspaces] = useState(workspaces)
-  const selectedTagsLocalStorage =
+  const selectedTagsLocalStorage = sortArrayInAlphabeticalOrder(
     JSON.parse(localStorage.getItem('selectedTags')) || []
+  )
 
   useEffect(() => {
     if (selectedTagsLocalStorage.length > 0) {
-      filterWorkspaces()
+      //filterWorkspacesWithOneTag()
+      filterWorkspacesWithAllTags()
     }
     // eslint-disable-next-line
   }, [])
@@ -36,7 +38,38 @@ function App() {
     </AppGrid>
   )
 
-  function filterWorkspaces() {
+  function filterWorkspacesWithAllTags() {
+    console.log('tags to filter: ' + selectedTagsLocalStorage)
+    const workspacesToFilter = []
+    workspaces.map((workspace) => {
+      const workspaceTagsSorted = sortArrayInAlphabeticalOrder(workspace.tags)
+      let tagMatchesFound = 0
+
+      selectedTagsLocalStorage.map((tag) => {
+        if (workspaceTagsSorted.includes(tag)) {
+          tagMatchesFound += 1
+        }
+      })
+
+      if (tagMatchesFound === selectedTagsLocalStorage.length) {
+        console.log('workspace with all tags: ' + workspace.name)
+        workspacesToFilter.push(workspace)
+      }
+      console.log(workspaceTagsSorted)
+    })
+
+    console.log(workspacesToFilter)
+    setCurrentWorkspaces(workspacesToFilter)
+  }
+
+  function sortArrayInAlphabeticalOrder(array) {
+    const arraySorted = array.sort((a, b) => {
+      return a.toString().localeCompare(b)
+    })
+    return arraySorted
+  }
+
+  function filterWorkspacesWithOneTag() {
     console.log('filterWorkspaces() ------------------------------')
     console.log('selectedTagsLocalStorage: ' + selectedTagsLocalStorage)
 
