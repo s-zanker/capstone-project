@@ -27,4 +27,5 @@ const TagContainerStyled = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 20px;
 `

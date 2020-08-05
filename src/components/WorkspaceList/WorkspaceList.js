@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import workspaces from '../../assets/workspaces.json'
 import Workspace from '../Workspace/Workspace'
 import styled from 'styled-components'
 import Button from '../Button/Button'
 import TagCloud from '../TagCloud/TagCloud'
 
-export default function WorkspaceList({ workspaces }) {
+export default function WorkspaceList({ workspaceList, setWorkspaceList }) {
   const arrowDown = '/icons/arrow_down_freshgreen.svg'
   const arrowUp = '/icons/arrow_up_freshgreen.svg'
   const filterBtnTxt = 'Finde einen Space, der zu dir passt'
@@ -44,16 +45,12 @@ export default function WorkspaceList({ workspaces }) {
   )
 
   useEffect(() => {
-    //console.log('Mounting WorkspaceList - selectedTags: ' + selectedTags)
+    filterWorkspacesWithAllTags()
   }, [])
 
   useEffect(() => {
-    //console.log('WorkspaceList - useEffect - tagCloudShown: ' + tagCloudShown)
-  }, [tagCloudShown])
-
-  useEffect(() => {
     localStorage.setItem('selectedTags', JSON.stringify(selectedTags))
-    //console.log('WorkspaceList - useEffect - setSelectedTags: ' + selectedTags)
+    console.log('WorkspaceList - useEffect - setSelectedTags: ' + selectedTags)
   }, [selectedTags])
 
   return (
@@ -67,9 +64,13 @@ export default function WorkspaceList({ workspaces }) {
           icon={!tagCloudShown ? arrowDown : arrowUp}
         />
         {tagCloudShown && (
-          <TagCloud tagList={tagList} onClick={handleClickOnTag} />
+          <TagCloud
+            tagList={tagList}
+            onTagClick={handleClickOnTag}
+            onIconClick={handleIconClick}
+          />
         )}
-        {workspaces.map((workspace) => (
+        {workspaceList.map((workspace) => (
           <Workspace workspace={workspace} key={workspace._id} />
         ))}
       </Grid>
@@ -80,11 +81,30 @@ export default function WorkspaceList({ workspaces }) {
     setTagCloudShown(!tagCloudShown)
   }
 
+  function handleIconClick(iconName) {
+    console.log('-------------------------------')
+    console.log('WorkspaceList - handleIconClick')
+    if (iconName === 'filter') {
+      console.log('Filter Workspaces nach Tags')
+      filterWorkspacesWithAllTags()
+    } else {
+      console.log('Reset Workspaces und Tags')
+      for (let i = 0; i <= selectedTags.length; i++) {
+        localStorage.setItem(selectedTags[i], false)
+      }
+
+      setSelectedTags([])
+      setWorkspaceList(workspaces)
+    }
+
+    toggleTagCloud()
+    console.log('-------------------------------')
+  }
+
   function handleClickOnTag(tagTitle, tagIsSelected) {
     console.log('--------------------------------')
     console.log('WorkspaceList - handleClickOnTag')
     console.log('tag: ' + tagTitle)
-    console.log('tagIsSelected: ' + tagIsSelected)
 
     if (!tagIsSelected && !selectedTags.includes(tagTitle)) {
       const updatedTags = [...selectedTags, tagTitle]
@@ -94,8 +114,41 @@ export default function WorkspaceList({ workspaces }) {
       setSelectedTags([...updatedSelectedTags])
       console.log('tag wird gelöscht')
     }
-
     console.log('--------------------------------')
+  }
+
+  function filterWorkspacesWithAllTags() {
+    console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    console.log('filterWorkspacesWithAllTags')
+    console.log('---------------------------')
+    console.log('selectedTags: ' + selectedTags)
+    const workspacesToFilter = []
+    workspaces.map((workspace) => {
+      const workspaceTagsSorted = sortArrayInAlphabeticalOrder(workspace.tags)
+      let tagMatchesFound = 0
+
+      selectedTags.map((tag) => {
+        if (workspaceTagsSorted.includes(tag)) {
+          tagMatchesFound += 1
+        }
+      })
+
+      if (tagMatchesFound === selectedTags.length) {
+        console.log('workspace with all tags: ' + workspace.name)
+        workspacesToFilter.push(workspace)
+      }
+      //console.log(workspaceTagsSorted)
+    })
+
+    setWorkspaceList(workspacesToFilter)
+    console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+  }
+
+  function sortArrayInAlphabeticalOrder(array) {
+    const arraySorted = array.sort((a, b) => {
+      return a.toString().localeCompare(b)
+    })
+    return arraySorted
   }
 }
 

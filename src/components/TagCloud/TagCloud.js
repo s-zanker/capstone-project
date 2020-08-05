@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import TagList from '../TagList/TagList'
 import Icon from '../Icon/Icon'
 
-export default function TagCloud({ tagList, onClick }) {
+export default function TagCloud({ tagList, onTagClick, onIconClick }) {
   const checkIcon = '/icons/check_freshgreen.svg'
-  const resetIcon = '/icons/reset_darkgreen.svg'
+  const resetIcon = '/icons/reset_freshgreen.svg'
 
   useEffect(() => {
     //console.log('TagCloud - useEffect')
@@ -14,16 +14,24 @@ export default function TagCloud({ tagList, onClick }) {
   return (
     <>
       <TagCloudContainerStyled>
-        <TagList tagList={tagList} onClick={onClick} clickable={true} />
-        <Icon icon={checkIcon} onClick={filterWorkspaces} clickable={true} />
-        <Icon icon={resetIcon} onClick={filterWorkspaces} clickable={true} />
+        <TagList tagList={tagList} onClick={onTagClick} clickable={true} />
+        <IconButtonBox>
+          <Icon
+            icon={checkIcon}
+            name={'filter'}
+            onIconClick={onIconClick}
+            clickable={true}
+          />
+          <Icon
+            icon={resetIcon}
+            name={'reset'}
+            onIconClick={onIconClick}
+            clickable={true}
+          />
+        </IconButtonBox>
       </TagCloudContainerStyled>
     </>
   )
-
-  function filterWorkspaces() {
-    console.log('filter button clicked')
-  }
 }
 
 const TagCloudContainerStyled = styled.div`
@@ -33,4 +41,10 @@ const TagCloudContainerStyled = styled.div`
   height: 100%;
   width: 100%;
   padding: 20px;
+`
+
+const IconButtonBox = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 80px;
 `

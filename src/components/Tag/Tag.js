@@ -33,7 +33,11 @@ const TagStyled = styled.span`
   border: 1px solid var(--freshgreen);
   padding: 4px 8px;
   margin: 6px 6px 0px 0px;
-  cursor: ${(props) => props.clicked || 'default'};
+  cursor: pointer;
+  &:hover {
+    background: var(--freshgreen);
+    color: white;
+  }
 `
 const TagDetailStyled = styled.span`
   color: var(--darkgreen);

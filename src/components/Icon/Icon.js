@@ -1,14 +1,23 @@
 import React from 'react'
+import styled from 'styled-components'
 
-export default function Icon({ icon, onClick, clickable }) {
+export default function Icon({ icon, name, onIconClick, clickable }) {
   return (
     <>
-      <img src={icon} alt="" onClick={clickable ? handleIconClick : null} />
+      <IconStyled
+        src={icon}
+        alt=""
+        onClick={clickable ? handleIconClick : null}
+      />
     </>
   )
 
   function handleIconClick() {
-    onClick()
-    console.log('Icon clicked')
+    onIconClick(name)
+    //console.log('ICON CLICKED: ' + icon + ' ' + name)
   }
 }
+
+const IconStyled = styled.img`
+  cursor: pointer;
+`
