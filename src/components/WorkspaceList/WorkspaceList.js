@@ -46,6 +46,7 @@ export default function WorkspaceList({ workspaceList, setWorkspaceList }) {
 
   useEffect(() => {
     filterWorkspacesWithAllTags()
+    // eslint-disable-next-line
   }, [])
 
   useEffect(() => {
@@ -134,10 +135,10 @@ export default function WorkspaceList({ workspaceList, setWorkspaceList }) {
       })
 
       if (tagMatchesFound === selectedTags.length) {
-        console.log('workspace with all tags: ' + workspace.name)
+        //console.log('workspace with all tags: ' + workspace.name)
         workspacesToFilter.push(workspace)
       }
-      //console.log(workspaceTagsSorted)
+      console.log(workspaceTagsSorted)
     })
 
     setWorkspaceList(workspacesToFilter)

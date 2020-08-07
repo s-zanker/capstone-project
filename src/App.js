@@ -1,17 +1,20 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import workspaces from './assets/workspaces.json'
 import Header from './components/Header/Header'
 import WorkspaceDetail from './components/WorkspaceDetail/WorkspaceDetail'
 import WorkspaceList from './components/WorkspaceList/WorkspaceList'
+import ScrollToTop from './lib/ScrollToTop'
 
 function App() {
   const [currentWorkspaces, setCurrentWorkspaces] = useState(workspaces)
 
   return (
     <AppGrid>
+      <ScrollToTop />
       <Header title="digitalnatur" />
+
       <Main>
         <Switch>
           <Route exact path="/">

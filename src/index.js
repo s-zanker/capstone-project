@@ -10,7 +10,6 @@ ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />
     <Router>
-      <ScrollToTop />
       <App />
     </Router>
   </React.StrictMode>,
