@@ -1,15 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import TagList from '../TagList/TagList'
 import Icon from '../Icon/Icon'
+import TagList from '../TagList/TagList'
 
 export default function TagCloud({ tagList, onTagClick, onIconClick }) {
   const checkIcon = '/icons/check_freshgreen.svg'
   const resetIcon = '/icons/reset_freshgreen.svg'
-
-  useEffect(() => {
-    //console.log('TagCloud - useEffect')
-  })
 
   return (
     <>

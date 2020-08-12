@@ -14,7 +14,6 @@ export default function Icon({ icon, name, onIconClick, clickable }) {
 
   function handleIconClick() {
     onIconClick(name)
-    //console.log('ICON CLICKED: ' + icon + ' ' + name)
   }
 }
 

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import workspaces from '../../assets/workspaces.json'
-import Workspace from '../Workspace/Workspace'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
+import workspaces from '../../assets/workspaces.json'
 import Button from '../Button/Button'
 import TagCloud from '../TagCloud/TagCloud'
+import Workspace from '../Workspace/Workspace'
 
 export default function WorkspaceList({ workspaceList, setWorkspaceList }) {
   const arrowDown = '/icons/arrow_down_freshgreen.svg'
@@ -51,7 +51,6 @@ export default function WorkspaceList({ workspaceList, setWorkspaceList }) {
 
   useEffect(() => {
     localStorage.setItem('selectedTags', JSON.stringify(selectedTags))
-    console.log('WorkspaceList - useEffect - setSelectedTags: ' + selectedTags)
   }, [selectedTags])
 
   return (
@@ -61,7 +60,7 @@ export default function WorkspaceList({ workspaceList, setWorkspaceList }) {
       <Grid>
         <Button
           name={filterBtnTxt}
-          onClick={toggleTagCloud}
+          onClick={!tagCloudShown ? toggleTagCloud : null}
           icon={!tagCloudShown ? arrowDown : arrowUp}
         />
         {tagCloudShown && (
@@ -78,51 +77,39 @@ export default function WorkspaceList({ workspaceList, setWorkspaceList }) {
     </>
   )
 
+  //show and hide tag cloud
   function toggleTagCloud() {
     setTagCloudShown(!tagCloudShown)
   }
 
-  function handleIconClick(iconName) {
-    console.log('-------------------------------')
-    console.log('WorkspaceList - handleIconClick')
-    if (iconName === 'filter') {
-      console.log('Filter Workspaces nach Tags')
-      filterWorkspacesWithAllTags()
-    } else {
-      console.log('Reset Workspaces und Tags')
-      for (let i = 0; i <= selectedTags.length; i++) {
-        localStorage.setItem(selectedTags[i], false)
-      }
-
-      setSelectedTags([])
-      setWorkspaceList(workspaces)
-    }
-
-    toggleTagCloud()
-    console.log('-------------------------------')
-  }
-
+  //select, unselect tags on click
   function handleClickOnTag(tagTitle, tagIsSelected) {
-    console.log('--------------------------------')
-    console.log('WorkspaceList - handleClickOnTag')
-    console.log('tag: ' + tagTitle)
-
     if (!tagIsSelected && !selectedTags.includes(tagTitle)) {
       const updatedTags = [...selectedTags, tagTitle]
       setSelectedTags(updatedTags)
     } else {
       const updatedSelectedTags = selectedTags.filter((tag) => tag !== tagTitle)
       setSelectedTags([...updatedSelectedTags])
-      console.log('tag wird gelöscht')
     }
-    console.log('--------------------------------')
   }
 
+  //manage click on icons to filter or reset workspaces
+  function handleIconClick(iconName) {
+    if (iconName === 'filter') {
+      filterWorkspacesWithAllTags()
+    } else {
+      for (let i = 0; i <= selectedTags.length; i++) {
+        localStorage.setItem(selectedTags[i], false)
+      }
+      setSelectedTags([])
+      setWorkspaceList(workspaces)
+    }
+
+    toggleTagCloud()
+  }
+
+  //filter workspaces based on selected tags
   function filterWorkspacesWithAllTags() {
-    console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
-    console.log('filterWorkspacesWithAllTags')
-    console.log('---------------------------')
-    console.log('selectedTags: ' + selectedTags)
     const workspacesToFilter = []
     workspaces.map((workspace) => {
       const workspaceTagsSorted = sortArrayInAlphabeticalOrder(workspace.tags)
@@ -135,14 +122,11 @@ export default function WorkspaceList({ workspaceList, setWorkspaceList }) {
       })
 
       if (tagMatchesFound === selectedTags.length) {
-        //console.log('workspace with all tags: ' + workspace.name)
         workspacesToFilter.push(workspace)
       }
-      console.log(workspaceTagsSorted)
     })
 
     setWorkspaceList(workspacesToFilter)
-    console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   }
 
   function sortArrayInAlphabeticalOrder(array) {

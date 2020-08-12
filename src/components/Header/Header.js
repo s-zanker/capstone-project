@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function Header({ title }) {
-  const logoPath = '/icons/digitalnatur-logo.svg'
+export default function Header({ logo }) {
   return (
     <HeaderStyled>
-      <img src={process.env.PUBLIC_URL + logoPath} alt="" />
+      <img src={logo} alt="header logo" />
     </HeaderStyled>
   )
 }

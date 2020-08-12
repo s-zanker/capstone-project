@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import styled from 'styled-components'
-import TagList from '../TagList/TagList'
 import Icon from '../Icon/Icon'
+import TagList from '../TagList/TagList'
 
 export default function WorkspaceDetail({ workspaces }) {
   let { id } = useParams()

@@ -7,7 +7,6 @@ export default function usePersistantTagState({ tagName }) {
 
   useEffect(() => {
     localStorage.setItem(tagName, isSelected)
-    console.log('customHook: ' + tagName + ' isSelected: ' + isSelected)
   }, [isSelected, tagName])
 
   return [isSelected, setIsSelected]

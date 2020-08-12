@@ -5,17 +5,22 @@ import workspaces from './assets/workspaces.json'
 import Header from './components/Header/Header'
 import WorkspaceDetail from './components/WorkspaceDetail/WorkspaceDetail'
 import WorkspaceList from './components/WorkspaceList/WorkspaceList'
-import ScrollToTop from './lib/ScrollToTop'
+import { useEffect } from 'react'
 
 function App() {
+  const digitalnaturLogo = '/icons/digitalnatur-logo.svg'
   const [currentWorkspaces, setCurrentWorkspaces] = useState(workspaces)
+  const mainContainer = document.getElementsByClassName('mainContainer')
+  const [mainScrollTop, setMainScrollTop] = useState(0)
+
+  useEffect(() => {
+    mainContainer.item(0).addEventListener('scroll', rememberMainScrollPosition)
+  }, [])
 
   return (
     <AppGrid>
-      <ScrollToTop />
-      <Header title="digitalnatur" />
-
-      <Main>
+      <Header logo={digitalnaturLogo} />
+      <Main className="mainContainer">
         <Switch>
           <Route exact path="/">
             <WorkspaceList
@@ -30,6 +35,11 @@ function App() {
       </Main>
     </AppGrid>
   )
+
+  function rememberMainScrollPosition(event) {
+    const mainElement = event.target
+    setMainScrollTop(mainElement.scrollTop)
+  }
 }
 
 export default App

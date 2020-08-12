@@ -24,5 +24,5 @@ const ButtonStyled = styled.button`
   color: var(--freshgreen);
   border-radius: 5px;
   border: 1px solid var(--freshgreen);
-  cursor: pointer;
+  cursor: ${(props) => (props.onClick ? 'pointer' : 'default')};
 `

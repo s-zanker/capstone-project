@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 export default function Tag({ title, onClick, clickable }) {
@@ -8,7 +8,6 @@ export default function Tag({ title, onClick, clickable }) {
 
   useEffect(() => {
     localStorage.setItem(title, isSelected)
-    //console.log('Tag - useEffect: ' + title + ' isSelected: ' + isSelected)
   }, [isSelected, title])
 
   return clickable ? (
